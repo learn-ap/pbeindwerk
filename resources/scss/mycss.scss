@@ -1,0 +1,420 @@
+//fonts
+//onderste is een andere regular font
+@font-face{
+  font-family: pinyonReg;
+  src:url("../webfonts/pinyonscriptregular.ttf");
+}
+
+@font-face {
+  font-family: philosB;
+  src:url("../webfonts/philosopherbold.ttf");
+}
+
+@font-face {
+  font-family: philosReg;
+  src:url("../webfonts/philosopherregular.ttf");
+}
+
+@font-face{
+  font-family: philosIta;
+  src:url("../webfonts/philosopherItalic.ttf");
+}
+
+
+
+
+
+
+
+
+//////////////////////////////////////////////////////////////////
+//Custom colors
+$myGreen: rgb(146, 168, 107);
+$myGrey: rgb(137, 137, 137);
+$myLightGrey: rgb(219,221,224);
+$myDarkred: rgb(165,62,76);
+
+
+//////////////////////////////////////////////////////////////////
+//custom classes
+
+//Font classes
+.font-pinyon{
+  font-family: pinyonReg;
+}
+
+.font-philos-bold{
+  font-family: philosB;
+}
+
+.font-philos-reg{
+  font-family: philosReg;
+}
+
+.font-philos-ita{
+  font-family: philosIta;
+}
+
+//Font Sizes
+.fs-7 {
+  font-size: 14px;
+  font-size: 0.875rem; /* Berekening: 14px / 16px (standaard basislettergrootte) */
+}
+
+.fs-100{
+  font-size:100px;
+}
+
+.fs-72{
+  font-size:72px;
+}
+
+//color classes
+.mytext-green{
+  color:$myGreen;
+}
+
+.mytext-grey{
+  color:$myGrey;
+}
+
+.mytext-darkred{
+  color:$myDarkred;
+}
+
+.mybg-green{
+  background-color: $myGreen;
+}
+
+.mybg-grey{
+  background-color: $myGrey;
+}
+
+.mybg-darkred{
+  background-color: $myDarkred;
+}
+
+
+
+/////////////////////////////////////////////////////////////////
+//others
+.letter-spacing-0{
+  letter-spacing: 0;
+}
+
+.letter-spacing-2{
+  letter-spacing: 2px;
+}
+
+.letter-spacing-7{
+  letter-spacing: 7px;
+}
+
+.cs-lh-bigtxt{
+  line-height: 0.8;
+}
+
+//de grootte voor alle iconen zoals twitter, facebook, enz
+.fontsize-icons{
+  font-size:20px;
+  color:rgba(73,73,73,0.8);
+}
+
+//tussenlijntjes
+.hr-lines {
+  &:before,
+  &:after {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 1px;
+    background: $myLightGrey;
+    vertical-align: middle;
+  }
+
+  &:before {
+    margin-right: 15px; // Marge rechts van de lijn
+  }
+
+  &:after {
+    margin-left: 15px; // Marge links van de lijn
+  }
+}
+//
+
+.icon-size{
+  width:40px;
+  height:40px;
+}
+
+.logo{
+  font-family: philosB;
+  font-size:30px;
+  color:$myGreen;
+  letter-spacing: 7px;
+}
+
+.navbar-font{
+  font-family: philosReg;
+  font-size:16px;
+}
+
+.myborder-bottom-dotted-grey {
+  border-bottom: 1px dashed $myLightGrey;
+}
+
+//filter-kleurencheckbox
+.custom-checkbox {
+  text-align: center;
+}
+
+.custom-checkbox-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  position: relative;
+  background-color: red;
+  border: 1px solid #fff;
+  /* outline: 2px solid grey;*/
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.custom-checkbox-input:checked {
+  outline: 1px solid grey;
+  border: 2px solid #fff;
+}
+
+//.custom-checkbox-input:checked:after {
+//    content: '✔';
+//    position: absolute;
+//    top: 50%;
+//    left: 50%;
+//    transform: translate(-50%, -50%);
+//    color: white;
+//    font-size: 18px;
+//}
+
+.custom-checkbox-label {
+  display: block;
+  margin-top: 8px;
+  cursor:pointer;
+}
+
+
+////filter-size-checkbox
+.custom-size-checkbox {
+  text-align: center;
+  width: 45px;
+  height: 45px;
+  position: relative;
+}
+
+.custom-size-checkbox-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+  width: 45px;
+  height: 45px;
+  display: inline-block;
+  position: relative;
+  background-color: $myLightGrey;
+  /* outline: 2px solid grey;*/
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.custom-size-checkbox-input:checked {
+  background-color: $myDarkred;
+}
+
+.custom-size-checkbox-input:checked+.custom-size-checkbox-label {
+  color: #fff;
+}
+
+.custom-size-checkbox-label {
+  position: absolute;
+  margin: 0;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  line-height: 45px;
+  cursor: pointer;
+}
+
+//price-slider
+#slider-round {
+  height: 10px;
+}
+
+#slider-round .noUi-connect {
+  background: #c0392b;
+}
+
+#slider-round .noUi-handle {
+  height: 18px;
+  width: 18px;
+  top: -5px;
+  right: -9px; /* half the width */
+  border-radius: 9px;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+.container-flex {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main {
+    flex: 1;
+}
+
+
+
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////
+//hover effects
+.custom-size-checkbox-input:hover {
+  background-color: $myGrey;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+///////////////////////////////////////////////////////
+
+@media (max-width: 992px) {
+  #cart {
+    overflow-x: auto;
+  }
+  #cart .row {
+    min-width: 800px; /* Adjust this value based on your content */
+  }
+}
+
+@media (min-width: 992px) {
+  .fontsize-icons{
+    font-size:28px;
+  }
+
+  .logo{
+    font-size:36px;
+  }
+
+  .myborder-left {
+    border-left: 1px solid $myLightGrey;
+  }
+
+  .myborder-right{
+    border-right: 1px solid $myLightGrey;
+  }
+
+
+  //tussenlijntjes
+  .hr-lines {
+    &:before,
+    &:after {
+      width: 45px;
+      height: 1px;
+      background: $myLightGrey;
+      vertical-align: middle;
+    }
+
+    //witruimte tussen het woord
+    &:before {
+      margin-right: 20px;
+    }
+
+    &:after {
+      margin-left: 20px;
+    }
+  }
+  //
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .noUi-target {
+//   background: #FAFAFA;
+//   border-radius: 4px;
+//   border: 1px solid #D3D3D3;
+//   box-shadow: inset 0 1px 1px #F0F0F0, 0 3px 6px -5px #BBB;
+// }
+//
+// .noUi-horizontal {
+//   height: 8px;
+// }
+//
+//.noUi-horizontal .noUi-handle {
+//  width: 20px;
+//  height: 20px;
+//  right: -17px;
+//  top: -2px;
+//  border-radius: 50%;
+//  background-color: red;
+//}
